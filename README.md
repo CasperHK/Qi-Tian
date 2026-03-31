@@ -38,24 +38,24 @@
 
 ## 🛠 快速上手 (Quick Start)
 1. 環境配置
-確保您的系統已安裝 sbt, Verilator 以及 RISC-V Toolchain。
-```bash
-# 複製齊天專案
-git clone https://github.com
-cd Qi-Tian
-```
+      確保您的系統已安裝 sbt, Verilator 以及 RISC-V Toolchain。
+      ```bash
+      # 複製齊天專案
+      git clone https://github.com
+      cd Qi-Tian
+      ```
 
 2. 生成 Verilog 硬件描述
-利用 Chisel 將高階代碼轉換為底層電路：
-```bash
-sbt "runMain qitian.Generator"
-```
+      利用 Chisel 將高階代碼轉換為底層電路：
+      ```bash
+      sbt "runMain qitian.Generator"
+      ```
 
 3. 仿真測試 (Simulation)
-驗證「齊天」在神經網絡運算中的正確性：
-```bash
-sbt "testOnly qitian.AITest"
-```
+      驗證「齊天」在神經網絡運算中的正確性：
+      ```bash
+      sbt "testOnly qitian.AITest"
+      ```
 
 ## 📂 專案結構
 * src/main/scala/core/: 處理器核心邏輯。
