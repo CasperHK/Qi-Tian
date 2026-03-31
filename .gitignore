@@ -1,0 +1,21 @@
+# Scala / sbt build artifacts
+target/
+project/target/
+project/project/
+.bsp/
+.metals/
+.bloop/
+
+# 生成的 Verilog
+generated/
+
+# chiseltest simulation output
+test_run_dir/
+
+# IntelliJ / VS Code
+.idea/
+.vscode/
+*.iml
+
+# macOS
+.DS_Store
